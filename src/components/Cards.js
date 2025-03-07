@@ -1,11 +1,11 @@
-const Cards = ({ characters, onCharacterClick }) => {
+const Cards = ({ characters, onCharacterClick}) => {
   return (
     <div className="cards">
       {characters.map((c, index) => (
         <div
           key={index}
           className="card"
-          onClick={() => onCharacterClick(c.name)}
+          onClick={() => onCharacterClick(c.url)}
         >
           {c.name}
         </div>
